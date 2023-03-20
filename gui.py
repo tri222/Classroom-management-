@@ -39,4 +39,27 @@ label1.grid(row=11)
 label1=Label(root)
 label1.grid(row=13)
 
+button1=Button(root,text='ADD STUDENT DATA                      ',fg='red',bg='white',command =ast,font=(12))
+button2=Button(root,text='DISPLAY STUDENT DATA             ',fg='red' ,bg='white',command =dsec,font=(12))
+button3=Button(root,text='REMOVE STUDENT DATA               ',fg='red',bg='white',command=rst,font=(12))
+button4=Button(root,text='STUDENT ATTENDANCE                ' ,fg='blue',bg='white',command=abstu,font=(12), )
+
+
+button1.grid()
+button2.grid()
+button3.grid()
+button4.grid()
+
+button1=Button(root,text='DISPLAY STUDENT ATTENDANCE ',fg='blue',bg='white',command =datt,font=(12))
+button2=Button(root,text='STUDENT FEES                               ',fg='green' ,bg='white',command =stf,font=(12))
+button3=Button(root,text='DISPLAY STUDENT FEES               ',fg='green',bg='white',command=dfees,font=(12))
+
+
+button1.grid()
+button2.grid()
+button3.grid()
+
+
+root.mainloop()
+
 
