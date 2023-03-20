@@ -65,7 +65,7 @@ def dsec():
  
  def abstu():
 
-    a=input("enter the date::")
+    a=input("enter the dates::")
 
     z=input("enter the rollno::")
 
