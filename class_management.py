@@ -27,7 +27,7 @@ def ast():
 
     con.commit()
 
-    print("data entered successfully")
+    print("data entered successfully in it")
 
     print(">---------------------------------------------------------------------------------------------------------<")
 
