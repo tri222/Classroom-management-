@@ -29,3 +29,37 @@ def ast():
 
     print(">---------------------------------------------------------------------------------------------------------<")
 
+def dsec():
+
+    cl=input("enter the section to get student list:::")
+
+    data=(cl,)
+
+    sql="select*from student where section =%s"
+
+    c=con.cursor()
+
+    c.execute(sql,data)
+
+    d=c.fetchall()
+
+    for i in d:
+
+        print("rollno:",i[0])
+
+        print("name:",i[1])
+
+        print("semester:",i[2])
+
+        print("section:",i[3])
+
+        print("address:",i[4])
+
+        print("phoneno:",i[5])
+
+        print(">----------------------------------------------------<")
+
+    print("data shown successfully")
+
+    print(">---------------------------------------------------------------------------------------------------------<")
+ 
