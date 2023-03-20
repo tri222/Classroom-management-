@@ -63,3 +63,30 @@ def dsec():
 
     print(">---------------------------------------------------------------------------------------------------------<")
  
+ def abstu():
+
+    a=input("enter the date::")
+
+    z=input("enter the rollno::")
+
+    b=input("enter the name of the student::")
+
+    e=input("enter the section of the student::")
+
+    d=input("attendance(present or absent)::")
+
+    data=(a,z,b,e,d)
+
+    sql='insert into stu_attendance values(%s,%s,%s,%s,%s)'
+
+    c=con.cursor()
+
+    c.execute(sql,data)
+
+    con.commit()
+
+    print("data entered successfully")
+
+    print(">---------------------------------------------------------------------------------------------------------<")
+
+    print()
